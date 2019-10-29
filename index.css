@@ -1,6 +1,8 @@
 .nav-link {
-	color: #F14E95;
-	font: normal normal normal 30px/1em 'courier new',courier-ps-w01,courier-ps-w02,courier-ps-w10,monospace;
+	color: #B4A779;
+	text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.2) -1px -1px 1px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-size: 3em;
 }
 
 #banner-main {
@@ -8,17 +10,18 @@
 	background-repeat: no-repeat;
 	min-height: 1500px;
 	background-size: 100%;
-    	background-position: 50% 50%;
+	background-position: 50% 50%;
 }
 
 #countdown {
 	background-image: url("img/img1.jpg");
 	background-size: 100%;
-	background-position: 50% 50%;
+	background-position: 50% 50%;		
 	min-height: 250px;
 	position: relative;
-	text-align: center;
+  	text-align: center;
 }
+
 .background-opacity {
 	min-height: 250px;
 	background: rgba(0, 0, 0, 0.6);
@@ -36,6 +39,10 @@
 #wedding-events img {
 	max-height: 900px;
 	max-width: 1200px;
+}
+
+#person img {
+	border-radius: 50% !important;
 }
 
 .carousel-inner img {
@@ -63,9 +70,10 @@
 
 #person {
 	text-align: center;
-	font: normal normal normal 50px/1.34em 'courier new',courier-ps-w01,courier-ps-w02,courier-ps-w10,monospace;
-	text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+	text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.2) -1px -1px 1px;
 	color: #707B8F;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-size: 4em;
 }
 
 #person .names {
@@ -74,7 +82,7 @@
 }
 
 #person .names:nth-child(2) {
-	padding-top: 10%;
+	padding-top: 15%;
 }
 
 #person .names:nth-child(1) {
@@ -98,14 +106,27 @@
 }
 
 .bride-and-groom {
-	margin-bottom: 50px !important;
+	margin-bottom: 50px;
 }
 
-.dress-code-title {
+#our-wedding {
 	text-align: center;
-	font: normal normal normal 50px/1.34em 'courier new',courier-ps-w01,courier-ps-w02,courier-ps-w10,monospace;
-	text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+	font-family: Helvetica, sans-serif;
+	color: black;
+	font-size: 1em;
+}
+
+#our-wedding p {
+	font-size: 0.8em;
+}
+
+.dress-code-title, .wedding-title {
+	text-align: center;
+	text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.2) -1px -1px 1px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-size: 4em;
 	color: #707B8F;
+	margin-bottom: 50px;
 }
 
 #dress-code img {
@@ -131,26 +152,28 @@
 
 	.nav-link {
 		color: #F14E95;
-		font: normal normal normal 16px 'courier new',courier-ps-w01,courier-ps-w02,courier-ps-w10,monospace;
+		text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.2) -1px -1px 1px;
+		font-family: Brush Script MT, Brush Script Std, cursive;
+		font-size: 1.8em;
 	}
 
 	#person {
 		background-color: #FAF7FC;
-		font-size: 1.5em;
-		text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.3) -1px -1px 1px;
+		text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.15) -1px -1px 1px;
+	}
+
+	.bride-and-groom {
+		margin-bottom: 20px;
+		font-size: 0.6em;
 	}
 
 	.dress-code-title {
 		margin-top: 10px;
-		text-align: center;
-		font: normal normal normal 30px/1em 'courier new',courier-ps-w01,courier-ps-w02,courier-ps-w10,monospace;
-		text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.3) -1px -1px 1px;
+		text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.2) -1px -1px 1px;
+		font-family: Brush Script MT, Brush Script Std, cursive;
+		font-size: 2.5em;
 		color: #707B8F;
 		margin-bottom: 40px;
-	}
-
-	#person .names {
-		padding-top: 5%;
 	}
 
 	.groom-name {
@@ -158,8 +181,13 @@
 		padding: 0px !important;
 	}
 
+	.wedding-title {
+		margin-bottom: 20px;
+	}
+
 	.hidden-name {
 		visibility: visible;
+		font: normal normal normal 0.4em 'courier new',courier-ps-w01,courier-ps-w02,courier-ps-w10,monospace;
 		padding-top: 5%;
 		padding-bottom: 5%;
 	}
@@ -168,14 +196,9 @@
 		width: 60% !important;
 	}
 
-	#person .names:nth-child(2) {
+	#person .names:nth-child(2), .hidden-name {
 		padding-top: 5%;
-		font-size: 1em !important;
-	}
-
-	#person .names:nth-child(1) {
-		padding-top: 10%;
-		font-size: 1em !important;
+		font-size: 0.3em !important;
 	}
 
 	/*#carouselExampleIndicators {
@@ -189,3 +212,4 @@
 	 	max-width: 200px;
  	}*/
 }
+
