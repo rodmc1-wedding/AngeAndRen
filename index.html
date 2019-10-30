@@ -9,7 +9,7 @@
     <link href="jquery-sakura.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Angelin and Ren</title>
   </head>
   <body>
@@ -20,16 +20,57 @@
 		    	<a class="nav-link active" href="#">Home</a>
 		  	</li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="#">About Us</a>
+			    <a class="nav-link" href="#">Gallery</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="#">Gallery</a>
+			    <a class="nav-link" href="#">Faqs</a>
 			  </li>
 			</ul>
 
 	  	<div id="banner-main" class="banner"></div>
 
 	  	<hr style="color: #F14E95">
+
+	  	<div id="wed-welcome" class="mb-3 mt-3">
+	  		<div class="row">
+	  			<div class="col-md-12 welcome-title">It's time to tie the knot</div>
+	  			<div class="col-md-8 offset-md-2 mb-3">
+	  				<p>Welcome to our wedding website, we can’t wait to celebrate our special day with you. We’ve created this website as a convenient and interactive way to share all of the important details with you in the lead up to our wedding.</p>
+					<p>You can also read more about our wedding venue, get to know our entourage, browse our prenup photos, and check our gift request.</p>
+					<p>So have fun, take a look around and don’t forget to RSVP! A favor of your reply is requested on or before November 15, 2019</p>
+					<p><button class="btn btn-info">RSVP</button></p>
+	  			</div>
+			</div>
+	  	</div>
+
+	  	<hr style="color: #F14E95">
+
+	  	<div id="person">
+	  		<div class="row">
+	  			<div class="col-md-12 bride-and-groom">The Bride And Groom</div>
+  				<div class="row">
+  					<div class="col-md-5 offset-md-1 names groom-name">
+  						Ranier Labatete
+  					</div>
+  					<div class="col-md-5">
+  						<img src="img/groom1.jpg" style="width: 70%">
+  					</div>
+  					<div class="col-md-5 hidden-name">
+  						Ranier Labatete
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col-md-5 offset-md-1">
+  						<img src="img/bride2.jpg" style="width: 70%">
+  					</div>
+  					<div class="col-md-5 names">
+  						Angelin Malaluan
+  					</div>
+  				</div>
+	  		</div>
+	  	</div>
+
+	  	<hr style="color: #F14E95" class="mt-5 mb-3">
 
 	  	<div id="our-wedding" class="mb-5">
 	  		<div class="row">
@@ -42,46 +83,18 @@
   					<h4>Ceremony</h4>
   					<p>St. Benedict Church<br>
   					<span><i>Ayala Westgrove Heights, Silang Cavite</i></span></p>
-  					<button type="button" class="btn btn-info mb-5">View Map</button>
+  					<a href=" http://maps.google.com/?q=St. Benedict Church Silang, Cavite, Philippines" target="_blank" class="btn btn-info mb-5">View Map</a>
   				</div>
   				<div class="col-md-4">
   					<h4>Reception</h4>
   					<p>ALTA VERANDA DE TIBIG - EL PABELION<br>
   					<span><i>Alcalde St. Brgy Tibig, 4118 Silang, Cavite</i></span></p>
-  					<button class="btn btn-info">View Map</button>
+  					<a href=" http://maps.google.com/?q=ALTA VERANDA DE TIBIG - EL PABELION Silang, Cavite, Philippines" target="_blank" class="btn btn-info mb-5">View Map</a>
   				</div>
 	  		</div>
 	  	</div>
 
 	  	<hr style="color: #F14E95">
-
-	  	<div id="person">
-	  		<div class="row">
-
-	  			<div class="col-md-12 bride-and-groom">The Bride And Groom</div>
-	  				<div class="row">
-	  					<div class="col-md-5 offset-md-1 names groom-name">
-	  						Rainer Labatete
-	  					</div>
-	  					<div class="col-md-5">
-	  						<img src="img/groom1.jpg" style="width: 70%">
-	  					</div>
-	  					<div class="col-md-5 hidden-name">
-	  						Rainer Labatete
-	  					</div>
-	  				</div>
-	  				<div class="row">
-	  					<div class="col-md-5 offset-md-1">
-	  						<img src="img/bride2.jpg" style="width: 70%">
-	  					</div>
-	  					<div class="col-md-5 names">
-	  						Angelin Malaluan
-	  					</div>
-	  				</div>
-	  			</div>
-	  		</div>
-
-	  	<hr style="color: #F14E95" class="mt-5 mb-3">
 	  		
 	  	<div id="dress-code" class="justify-content-center">
 	  		<div class="col-md-12 dress-code-title">Dress Code</div>
@@ -96,79 +109,93 @@
 	  	</div>
 
 	  	<hr style="color: #F14E95">
-			<div id="demo" class="carousel slide" data-ride="carousel">
-			  <ul class="carousel-indicators">
-			    <li data-target="#demo" data-slide-to="0" class="active"></li>
-			    <li data-target="#demo" data-slide-to="1"></li>
-			    <li data-target="#demo" data-slide-to="2"></li>
-			    <li data-target="#demo" data-slide-to="3"></li>
-			    <li data-target="#demo" data-slide-to="4"></li>
-			    <li data-target="#demo" data-slide-to="5"></li>
-			  </ul>
-			  <div class="carousel-inner">
-			    <div class="carousel-item active">
-			      <img src="img/img1.jpg" alt="Los Angeles" width="1100" height="500">
-			      <div class="carousel-caption">
-			        <h3>Caption 1</h3>
-			        <p>We had such a great time in LA!</p>
-			      </div>   
-			    </div>
-			    <div class="carousel-item">
-			      <img src="img/img1.jpg" alt="Los Angeles" width="1100" height="500">
-			      <div class="carousel-caption">
-			        <h3>Chicago</h3>
-			        <p>Thank you, Chicago!</p>
-			      </div>   
-			    </div>
-			    <div class="carousel-item">
-			     <img src="img/img1.jpg" alt="Los Angeles" width="1100" height="500">
-			      <div class="carousel-caption">
-			        <h3>Korea</h3>
-			        <p>Thank you, Korea!</p>
-			      </div>   
-			    </div>
-			    <div class="carousel-item">
-			      <img src="img/img1.jpg" alt="Los Angeles" width="1100" height="500">
-			      <div class="carousel-caption">
-			        <h3>Taiwan</h3>
-			        <p>Thank you, Taiwan!</p>
-			      </div>   
-			    </div>
-			    <div class="carousel-item">
-			      <img src="img/img1.jpg" alt="Los Angeles" width="1100" height="500">
-			      <div class="carousel-caption">
-			        <h3>Chicago</h3>
-			        <p>Thank you, Chicago!</p>
-			      </div>   
-			    </div>
-			    <div class="carousel-item">
-			      <img src="img/img1.jpg" alt="Los Angeles" width="1100" height="500">
-			      <div class="carousel-caption">
-			        <h3>New York</h3>
-			        <p>We love the Big Apple!</p>
-			      </div>   
-			    </div>
-			  </div>
-			  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-			    <span class="carousel-control-prev-icon"></span>
-			  </a>
-			  <a class="carousel-control-next" href="#demo" data-slide="next">
-			    <span class="carousel-control-next-icon"></span>
-			  </a>
-			</div>
+
+	  	<div id="contact-us">
+	  		<div class="col-md-12 contact-title">Contact Us</div>
+	  		<div class="row">
+	  			<div class="col-md-8 offset-md-2 pl-5 pr-5">
+	  				<p>We are so excited to celebrate our love, and would be thrilled if you could be there while we tie the knot. If you have any questions, please don’t hesitate to reach out!</p>
+	  				<p>Acemalaluan@gmail.com <br>09173034935</p>
+	  				<p><a href="https://www.facebook.com/AngelinMalaluan" target="_blank" class="fa fa-facebook"></a></p>
+	  			</div>
+	  		</div>
+	  	</div>
+
+	  	<hr style="color: #F14E95">
+
+		<div id="demo" class="carousel slide" data-ride="carousel">
+		  <ul class="carousel-indicators">
+		    <li data-target="#demo" data-slide-to="0" class="active"></li>
+		    <li data-target="#demo" data-slide-to="1"></li>
+		    <li data-target="#demo" data-slide-to="2"></li>
+		    <li data-target="#demo" data-slide-to="3"></li>
+		    <li data-target="#demo" data-slide-to="4"></li>
+		    <li data-target="#demo" data-slide-to="5"></li>
+		  </ul>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="img/img1.jpg" alt="Los Angeles" width="1100" height="500">
+		      <div class="carousel-caption">
+		        <h3>Caption 1</h3>
+		        <p>We had such a great time in LA!</p>
+		      </div>   
+		    </div>
+		    <div class="carousel-item">
+		      <img src="img/img1.jpg" alt="Los Angeles" width="1100" height="500">
+		      <div class="carousel-caption">
+		        <h3>Chicago</h3>
+		        <p>Thank you, Chicago!</p>
+		      </div>   
+		    </div>
+		    <div class="carousel-item">
+		     <img src="img/img1.jpg" alt="Los Angeles" width="1100" height="500">
+		      <div class="carousel-caption">
+		        <h3>Korea</h3>
+		        <p>Thank you, Korea!</p>
+		      </div>   
+		    </div>
+		    <div class="carousel-item">
+		      <img src="img/img1.jpg" alt="Los Angeles" width="1100" height="500">
+		      <div class="carousel-caption">
+		        <h3>Taiwan</h3>
+		        <p>Thank you, Taiwan!</p>
+		      </div>   
+		    </div>
+		    <div class="carousel-item">
+		      <img src="img/img1.jpg" alt="Los Angeles" width="1100" height="500">
+		      <div class="carousel-caption">
+		        <h3>Chicago</h3>
+		        <p>Thank you, Chicago!</p>
+		      </div>   
+		    </div>
+		    <div class="carousel-item">
+		      <img src="img/img1.jpg" alt="Los Angeles" width="1100" height="500">
+		      <div class="carousel-caption">
+		        <h3>New York</h3>
+		        <p>We love the Big Apple!</p>
+		      </div>   
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+		    <span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#demo" data-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		  </a>
+		</div>
 	  </div>
 	</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-		<script src="jquery-sakura.min.js"></script>
-		<script src="countdown.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+	<script src="jquery-sakura.min.js"></script>
+	<script src="countdown.js"></script>
 
-		<script>
-			$(window).load(function () {
-			    $('#banner-main').sakura();
-			});
-		</script>
+	<script>
+		$(window).load(function () {
+		    $('#banner-main').sakura();
+		});
+	</script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
