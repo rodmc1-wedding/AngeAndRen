@@ -272,4 +272,8 @@
 		padding-top: 5%;
 		font-size: 0.3em !important;
 	}
+
+	#person .names:nth-child(2) {
+		margin-bottom: 20px;
+	}
 }
