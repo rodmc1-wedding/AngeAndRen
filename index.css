@@ -1,3 +1,6 @@
+body {
+	background-color: #FFFCFC !important;
+}
 .nav-link {
 	color: #B4A779;
 	text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.2) -1px -1px 1px;
@@ -7,6 +10,7 @@
 
 #wed-welcome {
 	background-color: #F6ECEC;
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn-info {
@@ -19,6 +23,8 @@
 	min-height: 1500px;
 	background-size: 100%;
 	background-position: 50% 50%;
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+	margin-bottom: 15px;
 }
 
 #countdown {
@@ -102,6 +108,7 @@
 	color: #707B8F;
 	font-family: Brush Script MT, Brush Script Std, cursive;
 	font-size: 4em;
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 #person .names {
@@ -117,7 +124,7 @@
 	padding-top: 15%;
 }
 
-#person img {
+#person .person-img {
 	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -138,10 +145,13 @@
 }
 
 #our-wedding {
+	margin-top: 10px;
+	background-color: #F6ECEC;
 	text-align: center;
 	font-family: Helvetica, sans-serif;
 	color: black;
 	font-size: 1em;
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 #our-wedding h4 {
@@ -182,6 +192,10 @@
 	margin-right: auto;
 }
 
+#dress-code {
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
 @media only screen and (max-width: 750px) {
 
 	#banner-main {
@@ -193,7 +207,7 @@
 		width: 300px;
 	}
 
-	#dress-code img {
+	#dress-code .dress-code-img {
 		width: 100% !important;
 	}
 
@@ -222,7 +236,7 @@
 	}
 
 	#wed-welcome p {
-	 	font-size: 1.2em;
+	 	font-size: 1em;
 	 	margin-left: 25px;
 	 	margin-right: 25px;
 	}
@@ -264,16 +278,12 @@
 		padding-bottom: 5%;
 	}
 
-	#person img {
+	#person .person-img {
 		width: 60% !important;
 	}
 
 	#person .names:nth-child(2), .hidden-name {
 		padding-top: 5%;
 		font-size: 0.3em !important;
-	}
-
-	#person .names:nth-child(2) {
-		margin-bottom: 20px;
 	}
 }
