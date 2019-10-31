@@ -38,12 +38,12 @@
 		<!-- Photo Grid -->
 		<div class="row prenup-photos"> 
 		  <div class="column">
-		  	<img class="lazy" src="" data-src="img/pre-24.jpg">
-		  	<img class="lazy" src="" data-src="img/pre-25.jpg">
-		    <img class="lazy" src="" data-src="img/pre-1.jpg">
-		    <img class="lazy" src="" data-src="img/pre-37.jpg">
-		    <img class="lazy" src="" data-src="img/pre-2.jpg">
-		    <img class="lazy" src="" data-src="img/pre-3.jpg">
+		  	<img class="lazy lazy1" src="" data-src="img/pre-24.jpg">
+		  	<img class="lazy lazy1" src="" data-src="img/pre-25.jpg">
+		    <img class="lazy lazy1" src="" data-src="img/pre-1.jpg">
+		    <img class="lazy lazy3" src="" data-src="img/pre-37.jpg">
+		    <img class="lazy lazy3" src="" data-src="img/pre-2.jpg">
+		    <img class="lazy lazy3" src="" data-src="img/pre-3.jpg">
 		    <img class="lazy" src="" data-src="img/bride1.jpg">
 		    <img class="lazy" src="" data-src="img/pre-4.jpg">
 		    <img class="lazy" src="" data-src="img/pre-5.jpg">
@@ -64,12 +64,12 @@
 		    <img class="lazy" src="" data-src="img/pre-41.jpg">
 		  </div>
 		  <div class="column">
-		  	<img class="lazy" src="" data-src="img/bride2.jpg">
-		    <img class="lazy" src="" data-src="img/pre-12.jpg">
-		    <img class="lazy" src="" data-src="img/pre-11.jpg">
-		    <img class="lazy" src="" data-src="img/groom1.jpg">
-		    <img class="lazy" src="" data-src="img/pre-13.jpg">
-		    <img class="lazy" src="" data-src="img/pre-14.jpg">
+		  	<img class="lazy lazy2" src="" data-src="img/bride2.jpg">
+		    <img class="lazy lazy2" src="" data-src="img/pre-12.jpg">
+		    <img class="lazy lazy2" src="" data-src="img/pre-11.jpg">
+		    <img class="lazy lazy4" src="" data-src="img/groom1.jpg">
+		    <img class="lazy lazy4" src="" data-src="img/pre-13.jpg">
+		    <img class="lazy lazy4" src="" data-src="img/pre-14.jpg">
 		    <img class="lazy" src="" data-src="img/pre-28.jpg">
 		    <img class="lazy" src="" data-src="img/pre-15.jpg">
 		    <img class="lazy" src="" data-src="img/pre-6.jpg">
@@ -93,8 +93,13 @@
 	<script type="text/javascript" src="jquery.lazy.js"></script>
 	<script>
 		$(function($) {
-		    $("img.lazy").Lazy();
+			$('img.lazy1').Lazy();
+			$('img.lazy2').Lazy();
+			$('img.lazy3').Lazy();
+			$('img.lazy4').Lazy();
+			$('img.lazy').Lazy();
 		});
+		
 		var photos = $(".prenup-photos");
 		photos.hide();
 		// Get the elements with class="column"
@@ -120,6 +125,7 @@
 			elements[i].style.flex = "50%";
 			}
 		}
+
 	</script>
   </body> 
 </html>
