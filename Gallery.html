@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="gallery.css">
+    <link href="jquery-sakura.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Angelin and Ren</title>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  	<div class="container">
+	  	<!-- Content here -->
+	  	<ul class="nav justify-content-center mt-4">
+		  	<li class="nav-item">
+		    	<a class="nav-link" href="index.html">Home</a>
+		  	</li>
+		    <li class="nav-item">
+		    	<a class="nav-link" href="Gallery.html">Gallery</a>
+		    </li>
+		    <li class="nav-item">
+		    	<a class="nav-link" href="faqs.html">Faqs</a>
+		    </li>
+		</ul>
+
+		<!-- Header -->
+		<div class="header" id="myHeader">
+		  <button class="btn btn-info" onclick="one()">Prenup Video</button>
+		  <button class="btn btn-info" onclick="two()">Prenup Photos</button>
+		</div>
+
+		<!-- Photo Grid -->
+		<div class="row prenup-photos"> 
+		  <div class="column">
+		  	<img class="lazy" src="" data-src="img/pre-24.jpg">
+		  	<img class="lazy" src="" data-src="img/pre-25.jpg">
+		    <img class="lazy" src="" data-src="img/pre-1.jpg">
+		    <img class="lazy" src="" data-src="img/pre-37.jpg">
+		    <img class="lazy" src="" data-src="img/pre-2.jpg">
+		    <img class="lazy" src="" data-src="img/pre-3.jpg">
+		    <img class="lazy" src="" data-src="img/bride1.jpg">
+		    <img class="lazy" src="" data-src="img/pre-4.jpg">
+		    <img class="lazy" src="" data-src="img/pre-5.jpg">
+		    <img class="lazy" src="" data-src="img/pre-43.jpg">
+		    <img class="lazy" src="" data-src="img/pre-33.jpg">
+		    <img class="lazy" src="" data-src="img/pre-16.jpg">
+		    <img class="lazy" src="" data-src="img/pre-26.jpg">
+		    <img class="lazy" src="" data-src="img/pre-7.jpg">
+		    <img class="lazy" src="" data-src="img/pre-9.jpg">
+		    <img class="lazy" src="" data-src="img/pre-10.jpg">
+		    <img class="lazy" src="" data-src="img/pre-23.jpg">
+		    <img class="lazy" src="" data-src="img/pre-42.jpg">
+		    <img class="lazy" src="" data-src="img/pre-21.jpg">
+		    <img class="lazy" src="" data-src="img/pre-28.jpg">
+		    <img class="lazy" src="" data-src="img/pre-44.jpg">
+		    <img class="lazy" src="" data-src="img/pre-34.jpg">
+		    <img class="lazy" src="" data-src="img/pre-30.jpg">
+		    <img class="lazy" src="" data-src="img/pre-41.jpg">
+		  </div>
+		  <div class="column">
+		  	<img class="lazy" src="" data-src="img/bride2.jpg">
+		    <img class="lazy" src="" data-src="img/pre-12.jpg">
+		    <img class="lazy" src="" data-src="img/pre-11.jpg">
+		    <img class="lazy" src="" data-src="img/groom1.jpg">
+		    <img class="lazy" src="" data-src="img/pre-13.jpg">
+		    <img class="lazy" src="" data-src="img/pre-14.jpg">
+		    <img class="lazy" src="" data-src="img/pre-28.jpg">
+		    <img class="lazy" src="" data-src="img/pre-15.jpg">
+		    <img class="lazy" src="" data-src="img/pre-6.jpg">
+		    <img class="lazy" src="" data-src="img/pre-8.jpg">
+		    <img class="lazy" src="" data-src="img/pre-27.jpg">
+		    <img class="lazy" src="" data-src="img/pre-18.jpg">
+		    <img class="lazy" src="" data-src="img/pre-19.jpg">
+		    <img class="lazy" src="" data-src="img/pre-17.jpg">
+		    <img class="lazy" src="" data-src="img/pre-20.jpg">
+		    <img class="lazy" src="" data-src="img/pre-35.jpg">
+		    <img class="lazy" src="" data-src="img/pre-29.jpg">
+		    <img class="lazy" src="" data-src="img/pre-36.jpg">
+		    <img class="lazy" src="" data-src="img/pre-31.jpg">
+		    <img class="lazy" src="" data-src="img/pre-38.jpg">
+		    <img class="lazy" src="" data-src="img/pre-40.jpg">
+		    <img class="lazy" src="" data-src="img/pre-22.jpg">
+		    <img class="lazy" src="" data-src="img/pre-39.jpg">
+		  </div>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.lazy.js"></script>
+	<script>
+		$(function($) {
+		    $("img.lazy").Lazy();
+		});
+		var photos = $(".prenup-photos");
+		photos.hide();
+		// Get the elements with class="column"
+		var elements = document.getElementsByClassName("column");
+
+		// Declare a loop variable
+		var i;
+
+		// Full-width images
+		function one() {
+			photos.hide();
+		    for (i = 0; i < elements.length; i++) {
+		    elements[i].style.msFlex = "100%";  // IE10
+		    elements[i].style.flex = "100%";
+		  }
+		}
+
+		// Two images side by side
+		function two() {
+		  	photos.show();
+			for (i = 0; i < elements.length; i++) {
+			elements[i].style.msFlex = "50%";  // IE10
+			elements[i].style.flex = "50%";
+			}
+		}
+	</script>
+  </body> 
+</html>
