@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+img {
+  background: url('img/loading-image.gif') no-repeat;
+  background-size: 100% 100%;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
