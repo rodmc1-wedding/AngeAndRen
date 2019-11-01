@@ -13,4 +13,8 @@
 		font-family: Brush Script MT, Brush Script Std, cursive;
 		font-size: 1.8em;
 	}
+    .responsive {
+    width: 100%;
+    height: auto;
+  }
 }
