@@ -1,8 +1,52 @@
 .nav-link {
 	color: #B4A779;
-	text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.2) -1px -1px 1px;
+	text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.) -1px -1px 1px;
 	font-family: Brush Script MT, Brush Script Std, cursive;
 	font-size: 3em;
+}
+
+#faqs-main {
+  margin-top: 35px !important;
+  text-shadow: rgba(255, 255, 255, 0.2) 1px 1px 1px, rgba(0, 0, 0, 0.1) -1px -1px 1px;
+  text-align: center;
+}
+
+#faqs-main h1 {
+  font-style: initial;
+  font-family: serif, cursive;
+  font-size: 3em;
+}
+
+#faqs-main p {
+  font-family: serif;
+  font-weight: 10;
+}
+
+#faq1, #faq3, #faq5, #faq7, #faq9 {
+  background-color: #F6ECEC;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+#faq2, #faq4, #faq6, #faq8 {
+  background-color: #FAF7FC;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+#faq1 p, #faq2 p, #faq3 p, #faq5 p, #faq4 p, #faq6 p, #faq7 p, #faq8 p, #faq9 p {
+  font-family: monospace;
+  font-style: oblique;
+  font-size: 1.5em;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.faq1-title, .faq2-title, .faq3-title {
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.2) -1px -1px 1px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 4em;
+    color: #707B8F;
+    margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -13,8 +57,35 @@
 		font-family: Brush Script MT, Brush Script Std, cursive;
 		font-size: 1.8em;
 	}
-    .responsive {
-    width: 100%;
-    height: auto;
+
+  .faq1-title, .faq2-title, .faq3-title {
+      margin-top: 15px;
+      text-align: center;
+      text-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.1) 0px -1px 1px;
+      font-family: serif, cursive;
+      font-size: 1.1em;
+      color: #707B8F;
+      margin-bottom: 15px;
   }
+
+  #faq1 p, #faq2 p, #faq3 p, #faq4 p, #faq5 p, #faq6 p, #faq7 p, #faq8 p, #faq9 p {
+    font-size: 1em;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #585858;
+  }
+
+  #faqs-main {
+    margin-top: 35px !important;
+    text-shadow: rgba(255, 255, 255, 0.2) 1px 1px 1px, rgba(0, 0, 0, 0.1) -1px -1px 1px;
+  }
+
+  #faqs-main h1 {
+    font-size: 2.2em;
+  }
+
+  #faqs-main p {
+    font-size: 1.3em !important;
+  }
+
 }
