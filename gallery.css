@@ -13,6 +13,13 @@ body {
 	color: black !important;
 }
 
+#sticky-footer {
+	margin-top: 5px;
+	flex-shrink: none;
+	font-size: 1.2em;
+	font-family: cursive;
+}
+
 iframe {
 	width: 100%; 
 	text-align: center;
@@ -104,9 +111,9 @@ body {
   color: white;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 739px) {
 	iframe {
-		min-height: 215px;
+		min-height: 250px !important;
 	}
   
 	.nav-link {
@@ -129,7 +136,7 @@ body {
 	}
 }
 
-@media only screen and (min-width: 710px) {
+@media only screen and (min-width: 740px) {
   
 	iframe {
 		min-height: 640px !important;
