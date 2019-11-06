@@ -13,6 +13,12 @@ body {
 	border-bottom: 5px solid #CAAFAF;
 }
 
+#sticky-footer {
+  flex-shrink: none;
+  font-size: 1.2em;
+  font-family: cursive;
+}
+
 .active a {
 	color: black !important;
 }
