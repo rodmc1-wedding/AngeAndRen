@@ -27,9 +27,9 @@ body {
 }
 
 #sticky-footer {
-  flex-shrink: none;
-  font-size: 1.2em;
-  font-family: cursive;
+	flex-shrink: none;
+	font-size: 1.2em;
+	font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
 #banner-main {
