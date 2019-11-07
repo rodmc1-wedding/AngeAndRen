@@ -14,9 +14,9 @@ body {
 }
 
 #sticky-footer {
-  flex-shrink: none;
-  font-size: 1.2em;
-  font-family: cursive;
+	flex-shrink: none;
+	font-size: 1.2em;
+	font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
 .active a {
@@ -28,11 +28,12 @@ body {
 	margin-top: 35px !important;
 	text-shadow: rgba(255, 255, 255, 0.2) 1px 1px 1px, rgba(0, 0, 0, 0.1) -1px -1px 1px;
 	text-align: center;
+	font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
 #faqs-main h1 {
   font-style: initial;
-  font-family: serif, cursive;
+  font-family: Brush Script MT, Brush Script Std, cursive;
   font-size: 3em;
 }
 
