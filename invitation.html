@@ -29,11 +29,17 @@
 		    	<a class="nav-link" href="invitation.html">Invitation</a>
 		    </li>
 		</ul>
-
-		<div id="inv1" class="invitation-image"></div>
-		<div id="inv2" class="invitation-image"></div>
-		<div id="inv3" class="invitation-image"></div>
-		<div id="inv4" class="invitation-image"></div>
+		<div id="inv1">
+			<img class="invitation-image lazy" data-src="img/inv1.jpg" src="">
+		<div id="inv2" class="lazy" data-src="img/inv2.jpg">
+			<img class="invitation-image lazy" data-src="img/inv2.jpg" src="">
+		</div>
+		<div id="inv3" class="lazy" data-src="img/inv3.jpg">
+			<img class="invitation-image lazy" data-src="img/inv3.jpg" src="">
+		</div>
+		<div id="inv4" class="lazy" data-src="img/inv4.jpg">
+			<img class="invitation-image lazy" data-src="img/inv4.jpg" src="">
+		</div>
 	</div>
   	<footer id="sticky-footer" class="py-2 bg-dark" style="color: lightgrey">
 	    <div class="container text-center">
@@ -53,6 +59,15 @@
 		    e.preventDefault();
 		    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 600, 'linear');
 		  });
+		});
+	</script>
+	<script type="text/javascript" src="jquery.lazy.js"></script>
+	<script>
+		$(function() {
+			$('#inv1 img').Lazy();
+			$('#inv2 img').Lazy();
+			$('#inv3 img').Lazy();
+			$('#inv3 img').Lazy();
 		});
 	</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
