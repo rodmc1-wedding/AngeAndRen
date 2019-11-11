@@ -30,40 +30,30 @@ body {
 
 #inv1 {
 	margin-top: 10px;
-	background-image: url("img/inv1.jpg");
 	background-repeat: no-repeat;
-	min-height: 1500px;
 	background-size: 100%;
 	background-position: 50% 50%;
 	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 	margin-bottom: 15px;
 }
 
-#inv2 {
+#inv1, #inv2, #inv3, #inv4 {
+	-ms-flex: 50%; /* IE 10 */
+  	flex: 50%;
+	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.3);
 	margin-top: 10px;
-	background-image: url("img/inv2.jpg");
-	background-repeat: no-repeat;
-	min-height: 1500px;
-	background-size: 100%;
-	background-position: 50% 50%;
-	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-	margin-bottom: 15px;
-}
-
-#inv3 {
-	margin-top: 10px;
-	background-image: url("img/inv3.jpg");
-	background-repeat: no-repeat;
-	min-height: 1500px;
-	background-size: 100%;
-	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 	margin-bottom: 15px;
 }
 
 #inv4 {
-	background-image: url("img/inv4.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
+	margin-bottom: 0px !important;
+}
+
+.invitation-image {
+	background: url('img/loading-image.gif') no-repeat;
+	background-size: 100% 100%;
+	vertical-align: middle;
+  	width: 100%;
 }
 
 @media only screen and (max-width: 750px) {
