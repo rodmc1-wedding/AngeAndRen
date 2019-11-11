@@ -31,29 +31,24 @@ body {
 #inv1, #inv2, #inv3, #inv4 {
 	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.3);
 	margin-top: 10px;
-	margin-bottom: 15px;
+}
+
+img {
+	width: 100%;
+	height: auto;
 }
 
 #inv4 {
-	margin-bottom: 0px !important;
+	margin-bottom: 10px !important;
 }
 
 .invitation-image {
 	background: url('img/loading-image.gif') no-repeat;
 	background-size: 100% 100%;
-	vertical-align: middle;
-  	width: 100%;
 }
 
 @media only screen and (max-width: 750px) {
 
-	#inv1, #inv2, #inv3 {
-		min-height: 450px;
-	}
-
-	#inv4 {
-		min-height: 250px;
-	}
 
 	.nav-link {
 		color: #F14E95;
