@@ -28,18 +28,7 @@ body {
 	font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
-#inv1 {
-	margin-top: 10px;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: 50% 50%;
-	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-	margin-bottom: 15px;
-}
-
 #inv1, #inv2, #inv3, #inv4 {
-	-ms-flex: 50%; /* IE 10 */
-  	flex: 50%;
 	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.3);
 	margin-top: 10px;
 	margin-bottom: 15px;
