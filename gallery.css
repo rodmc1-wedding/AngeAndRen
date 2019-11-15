@@ -5,7 +5,7 @@ body {
 .nav-link {
 	color: #B4A779;
 	text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.2) -1px -1px 1px;
-	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-family: serif;
 	font-size: 3em;
 }
 
@@ -124,7 +124,7 @@ body {
 	.nav-link {
 		color: #F14E95;
 		text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.2) -1px -1px 1px;
-		font-family: Brush Script MT, Brush Script Std, cursive;
+		font-family: serif;
 		font-size: 1.2em;
 	}
 
