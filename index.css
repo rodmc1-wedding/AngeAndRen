@@ -213,6 +213,10 @@ body {
 
 @media only screen and (max-width: 750px) {
 
+	.title {
+		width: 90% !important;
+	}
+
 	#banner-main {
 		min-height: 450px;
 	}
